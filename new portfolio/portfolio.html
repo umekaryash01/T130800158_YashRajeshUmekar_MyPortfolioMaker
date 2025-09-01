@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.jpg"/>
+    <title>portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>  
+<body>     
+    <div class="main">
+        <div class="nav">
+             <div class="logo">yash umekar</div>
+                <div class="nav_options">
+                      <button class="nav_button" onclick="scrollToSection('home')">Home</button>
+                      <button class="nav_button" onclick="scrollToSection('about')">About</button>
+                      <button class="nav_button" onclick="scrollToSection('contactForm')">Contact</button>
+                </div> 
+        </div>
+
+        <!-- Greeting -->
+        <div id="home" class="box_imagebox">
+            <div class="info">
+                <div class="heading">
+                    <h1 id="greetingText">I'm a Fullstack Developer</h1>
+                </div>
+                <div class="para">
+                    <p>A web developer and JavaScript enthusiast with strong interest in web technologies.</p> 
+                </div>
+                <div class="button">
+                    <button type="button" class="btn btn-danger" onclick="scrollToSection('about')">About</button>
+                </div>
+            </div>
+            <img src="yashimage.jpg" class="img-fluid" alt="yash umekar">
+        </div>
+
+        <!-- About Section -->
+        <div id="about" class="box_about">
+            <div class="about_frame">
+                <div class="about_me"><h2>About me</h2></div>
+                <p class="about_content">
+                    I'm a passionate Full-Stack Developer with a strong foundation in both front-end and back-end technologies...
+                     <br>
+                    <br>
+                    <br>
+                    My tech stack includes JavaScript (React, Node.js), Java (Spring Boot), SQL & NoSQL databases, and cloud services. I thrive on solving complex problems, optimizing performance, and bringing ideas to life through clean, maintainable code.
+                    <br>
+                    <br>
+                    I enjoy working on innovative projects that challenge me to grow as a developer. Whether it's crafting dynamic UI components, designing RESTful APIs, or optimizing database queries, I bring a solution-oriented mindset to every project.
+                    <br>
+                    <br>
+                     Let’s build something amazing together!
+                    
+
+                </p>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="box_skill">
+            <h2 class="skill_heading">Skills</h2>
+            <div class="card_container">
+                <!-- Skill Cards (unchanged) -->
+                <div class="card" style="box-shadow: 15px 15px 5px orange;">
+                   <img src="HTML.jpg"/>
+                    <h4 class="card_title">HTML</h4>
+                </div>
+                <div class="card" style="box-shadow: 15px 15px 5px blue;">
+                     <img src="css.jpg" class="card_image"/>
+                     <h4 class="card_title">CSS</h4>
+                 </div>
+                 <div class="card" style="box-shadow: 15px 15px 5px yellow;">
+                    <img src="JS.jpg" class="card_image"/>
+                    <h4 class="card_title">JS</h4>
+                </div>
+                <div class="card" style="box-shadow: 15px 15px 5px purple;">
+                    <img src="bootstrap.jpg" class="card_image"/>
+                    <h4 class="card_title">bootstrap</h4>
+                </div>
+                <div class="card" style="box-shadow: 15px 15px 5px aqua;">
+                    <img src="Reacct js.jpg" class="card_image"/>
+                    <h4 class="card_title">react Js</h4>
+                </div>
+                <div class="card" style="box-shadow: 15px 15px 5px green;">
+                    <img src="node js.jpg" class="card_image"/>
+                    <h4 class="card_title">Node Js</h4>
+                </div>
+                <div class="card" style="box-shadow: 15px 15px 5px rgb(54, 138, 153);">
+                    <img src="tailwind.jpg" class="card_image"/>
+                    <h4 class="card_title">tailwind</h4>
+                </div>
+                <div class="card" style="box-shadow: 15px 15px 5px gray;">
+                    <img src="github.jpg" class="card_image"/>
+                    <h4 class="card_title">Github</h4>
+                </div>
+            </div>
+        </div>
+            
+
+        <!-- Contact Section -->
+        <div id="contactForm" class="box_form">
+            <div class="form_container">
+                <div class="formtitle"><h2>Contact</h2></div>
+                <p class="para">Submit the form below to get in touch with me!</p>
+                <form id="contactFormElement">
+                    <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                    <input type="email" id="email" class="form-control" placeholder="Enter your Email">
+                    <textarea id="message" class="form-control" placeholder="Enter your message"></textarea>
+                    <div class="form_button mt-3">
+                        <button type="button" class="btn btn-danger" onclick="validateForm()">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="details">
+                <i><h5 class="organized">Designed by :- Yash Umekar (Portfolio)</h5></i>
+                <i><h5 class="contact"> Contact :- 7517028911</h5></i>
+            </div>    
+        </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
